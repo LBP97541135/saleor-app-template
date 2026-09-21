@@ -1,5 +1,6 @@
 import { actions, useAppBridge } from "@saleor/app-sdk/app-bridge";
 import { Box, Button, Text } from "@saleor/macaw-ui";
+import Link from "next/link";
 
 import { OrderExample } from "../order-example";
 
@@ -56,6 +57,21 @@ const ActionsPage = () => {
           <Button variant={"secondary"} onClick={navigateToOrders}>
             Redirect to orders ➡️💰
           </Button>
+        </Box>
+      </Box>
+      <Box>
+        <Text as={"h2"} size={8} marginBottom={2}>
+          App Configuration
+        </Text>
+        <Text color="default2">
+          ⚙️ Configure your app settings including budget guardrails and other preferences.
+        </Text>
+        <Box display={"flex"} gap={4} gridAutoFlow={"column"} marginY={4}>
+          <Link href="/configuration">
+            <Button variant={"secondary"}>
+              Open Settings ⚙️
+            </Button>
+          </Link>
         </Box>
       </Box>
       <OrderExample />

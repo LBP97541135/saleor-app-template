@@ -1,0 +1,9 @@
+query AppBudgetSettings($id: ID!) {
+  app(id: $id) {
+    id
+    privateMetadata {
+      key
+      value
+    }
+  }
+}
