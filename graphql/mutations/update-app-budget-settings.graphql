@@ -1,0 +1,9 @@
+mutation UpdateAppBudgetSettings($id: ID!, $input: [MetadataItem!]!) {
+  updatePrivateMetadata(id: $id, input: $input) {
+    errors {
+      field
+      message
+      code
+    }
+  }
+}
