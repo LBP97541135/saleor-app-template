@@ -1,0 +1,4 @@
+{
+  "healthPath": "/api/health",
+  "probeField": "status"
+}
