@@ -1,12 +1,13 @@
-import { describe, it, expect } from "vitest";
-import probeData from "./probe.json";
+import { describe, expect, it } from "vitest";
+
+import probeJson from "./probe.json";
 
 describe("probe.json", () => {
-  it("should have healthPath equal to /api/health", () => {
-    expect(probeData.healthPath).toBe("/api/health");
+  it("has healthPath equal to /api/health", () => {
+    expect(probeJson.healthPath).toBe("/api/health");
   });
 
-  it("should have probeField equal to status", () => {
-    expect(probeData.probeField).toBe("status");
+  it("has probeField equal to status", () => {
+    expect(probeJson.probeField).toBe("status");
   });
 });
