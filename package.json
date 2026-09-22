@@ -29,6 +29,7 @@
   "dependencies": {
     "@saleor/app-sdk": "1.12.0",
     "@saleor/macaw-ui": "1.4.1",
+    "@saleor/sdk": "0.7.0",
     "@urql/exchange-auth": "^1.0.0",
     "next": "15.5.24",
     "react": "18.3.1",
