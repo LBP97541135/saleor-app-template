@@ -1,0 +1,7 @@
+{
+  "script": "verify-promotions-preview.mjs",
+  "command": "node verify-promotions-preview.mjs",
+  "exit_code": 1,
+  "passed": false,
+  "summary": "FAIL: the delivered commit 5074fe6 adds only src/health/probe.json and src/health/probe.test.ts; src/pages/api/promotions/ and preview.ts do not exist (git status/diff clean otherwise), so all 11 checks for the promotions preview API and its tests failed."
+}
